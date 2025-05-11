@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 28 80% 98%; /* #FEF4EA - Warm Off-White */
+    --foreground: 210 11% 15%; /* #212529 - Dark Gray */
+    --card: 0 0% 100%; /* #FFFFFF - Pure White */
+    --card-foreground: 210 11% 15%; /* #212529 - Dark Gray */
+    --popover: 0 0% 100%; /* #FFFFFF - Pure White */
+    --popover-foreground: 210 11% 15%; /* #212529 - Dark Gray */
+    --primary: 14 100% 60%; /* #FF5C35 - Vibrant Orange */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF - Pure White */
+    --secondary: 210 7% 83%; /* #DEE2E6 - Light Gray */
+    --secondary-foreground: 210 11% 15%; /* #212529 - Dark Gray */
+    --muted: 210 7% 83%; /* #DEE2E6 - Light Gray */
+    --muted-foreground: 210 9% 45%; /* #6C757D - Medium Gray */
+    --accent: 210 7% 83%; /* #DEE2E6 - Light Gray */
+    --accent-foreground: 210 11% 15%; /* #212529 - Dark Gray */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 7% 83%; /* #DEE2E6 - Light Gray */
+    --input: 210 7% 83%; /* #DEE2E6 - Light Gray */
+    --ring: 14 100% 60%; /* #FF5C35 - Vibrant Orange */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 210 11% 15%; /* Dark version of #212529 */
+    --foreground: 28 80% 98%; /* #FEF4EA - Warm Off-White */
+    --card: 210 10% 23%; /* Darker version of background */
+    --card-foreground: 28 80% 98%; /* #FEF4EA - Warm Off-White */
+    --popover: 210 10% 23%; /* Darker version of background */
+    --popover-foreground: 28 80% 98%; /* #FEF4EA - Warm Off-White */
+    --primary: 14 100% 60%; /* #FF5C35 - Vibrant Orange */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF - Pure White */
+    --secondary: 210 9% 31%; /* Darker version of #6C757D */
+    --secondary-foreground: 28 80% 98%; /* #FEF4EA - Warm Off-White */
+    --muted: 210 9% 31%; /* Darker version of #6C757D */
+    --muted-foreground: 210 7% 83%; /* #DEE2E6 - Light Gray */
+    --accent: 210 9% 31%; /* Darker version of #6C757D */
+    --accent-foreground: 28 80% 98%; /* #FEF4EA - Warm Off-White */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 9% 31%; /* Darker version of #6C757D */
+    --input: 210 9% 31%; /* Darker version of #6C757D */
+    --ring: 14 100% 60%; /* #FF5C35 - Vibrant Orange */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold text-darkGray dark:text-warmWhite;
+  }
+  p {
+    @apply text-darkGray dark:text-warmWhite leading-relaxed;
+  }
+}
