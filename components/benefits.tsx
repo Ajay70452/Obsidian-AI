@@ -66,7 +66,7 @@ export default function Benefits() {
           <div className="inline-block px-4 py-2 bg-primary-50 rounded-full mb-6 border border-primary-100">
             <span className="text-primary-700 font-medium text-sm">Why Choose Us</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-darkGray mb-6">Benefits of LeadSpark AI</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-darkGray mb-6">Benefits of Obsidian AI</h2>
           <p className="text-xl text-mediumGray">
             Transform your sales outreach with AI-powered insights and personalization.
           </p>

@@ -61,13 +61,7 @@ export default function Hero() {
               >
                 Request Demo
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-lightGray text-darkGray hover:border-primary-300 hover:bg-primary-50 font-medium px-8 py-6 rounded-lg text-lg transition-all duration-300"
-              >
-                See How It Works
-              </Button>
+              
             </div>
           </div>
           <div

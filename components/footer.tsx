@@ -65,11 +65,11 @@ export default function Footer() {
             <div className="mb-8 md:mb-0">
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 bg-primary-500 rounded-lg mr-3 flex items-center justify-center">
-                  <span className="text-white font-bold">LS</span>
+                  <span className="text-white font-bold">OB</span>
                 </div>
-                <p className="text-xl font-bold">LeadSpark AI</p>
+                <p className="text-xl font-bold">Obsidian AI</p>
               </div>
-              <p className="text-mediumGray">© 2023 LeadSpark AI. All rights reserved.</p>
+              <p className="text-mediumGray">© 2025 Obsidian AI. All rights reserved.</p>
             </div>
             <div className="flex space-x-8">
               <a href="#" className="text-mediumGray hover:text-primary-500 transition-colors duration-300">
