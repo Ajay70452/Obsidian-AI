@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { useInView } from "react-intersection-observer"
 import { useEffect, useState } from "react"
 import HeroAnimation from "@/components/hero-animation"
+// No need to import Link from 'next/link' for external URLs
 
 export default function Hero() {
   const [ref, inView] = useInView({
@@ -55,13 +56,21 @@ export default function Hero() {
               hours of research time and boost your reply rates.
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
+              {/* --- MODIFIED BUTTON --- */}
               <Button
                 size="lg"
                 className="bg-primary-500 hover:bg-primary-600 text-white font-medium px-8 py-6 rounded-lg text-lg shadow-button transition-all duration-300 hover:translate-y-[-2px]"
+                asChild // Add this prop
               >
-                Request Demo
+                <a
+                  href="https://forms.gle/ag176kaWkDC9Ve2P6"
+                  target="_blank" // Opens in a new tab
+                  rel="noopener noreferrer" // Security best practice
+                >
+                  Request Demo
+                </a>
               </Button>
-              
+              {/* --- END MODIFIED BUTTON --- */}
             </div>
           </div>
           <div

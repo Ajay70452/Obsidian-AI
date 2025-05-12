@@ -34,11 +34,18 @@ export default function Footer() {
               Join hundreds of sales teams already using LeadSpark AI to boost their productivity and results.
             </p>
             <Button
-              size="lg"
-              className="bg-primary-500 hover:bg-primary-600 text-white font-medium px-8 py-6 rounded-lg text-lg shadow-button transition-all duration-300 hover:translate-y-[-2px]"
-            >
-              Request Demo
-            </Button>
+                size="lg"
+                className="bg-primary-500 hover:bg-primary-600 text-white font-medium px-8 py-6 rounded-lg text-lg shadow-button transition-all duration-300 hover:translate-y-[-2px]"
+                asChild // Add this prop
+              >
+                <a
+                  href="https://forms.gle/ag176kaWkDC9Ve2P6"
+                  target="_blank" // Opens in a new tab
+                  rel="noopener noreferrer" // Security best practice
+                >
+                  Request Demo
+                </a>
+              </Button>
           </div>
 
           <div
