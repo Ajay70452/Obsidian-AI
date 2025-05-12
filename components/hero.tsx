@@ -51,7 +51,7 @@ export default function Hero() {
               Turn Cold Leads Into <span className="text-primary-500">Hot Opportunities</span>
             </h1>
             <p className="text-xl text-mediumGray mb-8 leading-relaxed">
-              LeadSpark AI researches your prospects and crafts personalized outreach hooks that get responses. Save
+              Obsidian AI researches your prospects and crafts personalized outreach hooks that get responses. Save
               hours of research time and boost your reply rates.
             </p>
             <div className="flex flex-col sm:flex-row gap-5">

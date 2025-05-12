@@ -51,7 +51,7 @@ export default function HowItWorks() {
           <div className="inline-block px-4 py-2 bg-primary-50 rounded-full mb-6 border border-primary-100">
             <span className="text-primary-700 font-medium text-sm">Our Process</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-darkGray mb-6">How LeadSpark AI Works</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-darkGray mb-6">How Obsidian AI Works</h2>
           <p className="text-xl text-mediumGray">
             Our AI-powered platform automates research and generates personalized outreach hooks in three simple steps.
           </p>
