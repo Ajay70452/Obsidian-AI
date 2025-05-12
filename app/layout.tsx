@@ -17,10 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <title>LeadSpark AI - Automate Lead Research & Outreach</title>
+        <title>Obsidian AI - Automate Lead Research & Outreach</title>
         <meta
           name="description"
-          content="LeadSpark AI automates lead research and generates personalized outreach hooks for sales teams."
+          content="Obsidian AI automates lead research and generates personalized outreach hooks for sales teams."
         />
       </head>
       <body className={`${inter.variable} font-sans`}>
