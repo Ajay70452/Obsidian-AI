@@ -1,6 +1,6 @@
 "use client"
 
-import { AlertTriangle, Clock, Search } from "lucide-react"
+import { AlertTriangle, Clock, Search, UserMinus, FileSearch } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { useInView } from "react-intersection-observer"
 import { useEffect, useState } from "react"
@@ -22,25 +22,38 @@ export default function Problem() {
   const problems = [
     {
       icon: <Clock className="h-8 w-8 text-primary-500" />,
-      title: "Time Drain",
-      description: "SDRs spend up to 70% of their day researching prospects instead of engaging with them directly.",
+      title: "Hours Wasted Daily",
+      description: "Reps spending 20-40% of their time on manual research instead of engaging prospects.",
       bgColor: "bg-primary-50",
       delay: 0,
     },
     {
       icon: <Search className="h-8 w-8 text-primary-500" />,
-      title: "Generic Outreach",
-      description:
-        "Without proper research, outreach becomes generic and impersonal, leading to dismal response rates.",
+      title: "Inconsistent Personalization",
+      description: "Outreach quality varies, leading to missed opportunities and lower conversion rates.",
       bgColor: "bg-primary-50",
       delay: 150,
     },
     {
       icon: <AlertTriangle className="h-8 w-8 text-primary-500" />,
-      title: "Burnout Risk",
-      description: "Repetitive research tasks lead to burnout and high turnover among sales development teams.",
+      title: "Low Reply Rates",
+      description: "Generic messages fail to cut through the noise, tanking your engagement metrics.",
       bgColor: "bg-primary-50",
       delay: 300,
+    },
+    {
+      icon: <UserMinus className="h-8 w-8 text-primary-500" />,
+      title: "SDR Burnout",
+      description: "Repetitive, low-value tasks lead to frustration and decreased morale among team members.",
+      bgColor: "bg-primary-50",
+      delay: 450,
+    },
+    {
+      icon: <FileSearch className="h-8 w-8 text-primary-500" />,
+      title: "Missed Intel",
+      description: "Critical buying signals and personalization opportunities buried in online noise.",
+      bgColor: "bg-primary-50",
+      delay: 600,
     },
   ]
 

@@ -21,40 +21,38 @@ export default function Benefits() {
   const benefits = [
     {
       icon: <Clock className="h-10 w-10 text-primary-500" />,
-      title: "Save 15+ Hours Weekly",
-      description:
-        "Eliminate manual research and free up your SDRs to focus on meaningful conversations with prospects.",
+      title: "Save Valuable Hours Daily",
+      description: "Free up your sales team to focus on selling, not searching. Cut research time by up to 70%.",
       delay: 0,
     },
     {
       icon: <BarChart2 className="h-10 w-10 text-primary-500" />,
-      title: "3x Higher Reply Rates",
-      description: "Personalized outreach hooks based on relevant insights generate significantly higher engagement.",
+      title: "Skyrocket Reply Rates",
+      description: "Engage prospects with hyper-personalized outreach that stands out from the competition.",
       delay: 100,
     },
     {
       icon: <Calendar className="h-10 w-10 text-primary-500" />,
-      title: "More Booked Meetings",
-      description: "Convert more prospects into scheduled meetings with personalized, relevant outreach.",
+      title: "Book More Qualified Meetings",
+      description: "Turn insights into conversations and opportunities with relevant, timely outreach.",
       delay: 200,
     },
     {
       icon: <Target className="h-10 w-10 text-primary-500" />,
-      title: "Improved Targeting",
-      description: "Identify the most promising prospects based on AI-powered insights and engagement patterns.",
+      title: "Boost SDR Productivity & Morale",
+      description: "Eliminate tedious tasks and empower your team with better tools and insights.",
       delay: 300,
     },
     {
       icon: <Sparkles className="h-10 w-10 text-primary-500" />,
-      title: "Consistent Quality",
-      description: "Maintain high-quality outreach across your entire team, regardless of experience level.",
+      title: "Achieve Consistent Outreach Quality",
+      description: "Ensure every prospect interaction is informed and relevant, regardless of rep experience.",
       delay: 400,
     },
     {
       icon: <DollarSign className="h-10 w-10 text-primary-500" />,
-      title: "Increased ROI",
-      description:
-        "Maximize your sales team's efficiency and effectiveness, leading to higher conversion rates and revenue.",
+      title: "Scale Your Prospecting Efforts",
+      description: "Handle more leads effectively without burning out your team or sacrificing quality.",
       delay: 500,
     },
   ]
@@ -66,9 +64,11 @@ export default function Benefits() {
           <div className="inline-block px-4 py-2 bg-primary-50 rounded-full mb-6 border border-primary-100">
             <span className="text-primary-700 font-medium text-sm">Why Choose Us</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-darkGray mb-6">Benefits of Obsidian AI</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-darkGray mb-6">
+            Transform Your Sales Process with Obsidian AI
+          </h2>
           <p className="text-xl text-mediumGray">
-            Transform your sales outreach with AI-powered insights and personalization.
+            Achieve tangible results and ROI with our AI-powered sales intelligence platform.
           </p>
         </div>
 

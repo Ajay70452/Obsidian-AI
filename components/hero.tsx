@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 import { useInView } from "react-intersection-observer"
 import { useEffect, useState } from "react"
 import HeroAnimation from "@/components/hero-animation"
-// No need to import Link from 'next/link' for external URLs
 
 export default function Hero() {
   const [ref, inView] = useInView({
@@ -48,29 +47,22 @@ export default function Hero() {
             <div className="inline-block px-4 py-2 bg-primary-50 rounded-full mb-6 border border-primary-100">
               <span className="text-primary-700 font-medium text-sm">AI-Powered Sales Enablement</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-darkGray leading-tight mb-6">
-              Turn Cold Leads Into <span className="text-primary-500">Hot Opportunities</span>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-darkGray leading-tight mb-6">
+              Cut Lead Research Time. Deliver <span className="text-primary-500">Hyper-Personalized AI Outreach</span>{" "}
+              in Seconds.
             </h1>
-            <p className="text-xl text-mediumGray mb-8 leading-relaxed">
-              Obsidian AI researches your prospects and crafts personalized outreach hooks that get responses. Save
-              hours of research time and boost your reply rates.
+            <p className="text-l text-mediumGray mb-8 leading-relaxed">
+              Obsidian AI automates deep lead research and generates compelling, personalized outreach content,
+              empowering your sales team to connect with more qualified prospects, more effectively.
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
-              {/* --- MODIFIED BUTTON --- */}
               <Button
                 size="lg"
                 className="bg-primary-500 hover:bg-primary-600 text-white font-medium px-8 py-6 rounded-lg text-lg shadow-button transition-all duration-300 hover:translate-y-[-2px]"
-                asChild // Add this prop
               >
-                <a
-                  href="https://forms.gle/ag176kaWkDC9Ve2P6"
-                  target="_blank" // Opens in a new tab
-                  rel="noopener noreferrer" // Security best practice
-                >
-                  Request Demo
-                </a>
+                Request Demo
               </Button>
-              {/* --- END MODIFIED BUTTON --- */}
+             
             </div>
           </div>
           <div

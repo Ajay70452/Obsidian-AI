@@ -29,23 +29,16 @@ export default function Footer() {
           <div
             className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to transform your sales outreach?</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Revolutionize Your Sales Outreach?</h2>
             <p className="text-mediumGray text-lg mb-8 leading-relaxed">
-              Join hundreds of sales teams already using LeadSpark AI to boost their productivity and results.
+              Stop guessing, start engaging. See how Obsidian AI can transform your prospecting.
             </p>
             <Button
-                size="lg"
-                className="bg-primary-500 hover:bg-primary-600 text-white font-medium px-8 py-6 rounded-lg text-lg shadow-button transition-all duration-300 hover:translate-y-[-2px]"
-                asChild // Add this prop
-              >
-                <a
-                  href="https://forms.gle/ag176kaWkDC9Ve2P6"
-                  target="_blank" // Opens in a new tab
-                  rel="noopener noreferrer" // Security best practice
-                >
-                  Request Demo
-                </a>
-              </Button>
+              size="lg"
+              className="bg-primary-500 hover:bg-primary-600 text-white font-medium px-8 py-6 rounded-lg text-lg shadow-button transition-all duration-300 hover:translate-y-[-2px]"
+            >
+              Request Demo
+            </Button>
           </div>
 
           <div
@@ -72,11 +65,11 @@ export default function Footer() {
             <div className="mb-8 md:mb-0">
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 bg-primary-500 rounded-lg mr-3 flex items-center justify-center">
-                  <span className="text-white font-bold">OB</span>
+                  <span className="text-white font-bold">OA</span>
                 </div>
                 <p className="text-xl font-bold">Obsidian AI</p>
               </div>
-              <p className="text-mediumGray">© 2025 Obsidian AI. All rights reserved.</p>
+              <p className="text-mediumGray">© 2023 Obsidian AI. All rights reserved.</p>
             </div>
             <div className="flex space-x-8">
               <a href="#" className="text-mediumGray hover:text-primary-500 transition-colors duration-300">
@@ -85,7 +78,10 @@ export default function Footer() {
               <a href="#" className="text-mediumGray hover:text-primary-500 transition-colors duration-300">
                 Terms of Service
               </a>
-              <a href="#" className="text-mediumGray hover:text-primary-500 transition-colors duration-300">
+              <a
+                href="mailto:sales@obsidianai.tech"
+                className="text-mediumGray hover:text-primary-500 transition-colors duration-300"
+              >
                 Contact Us
               </a>
             </div>

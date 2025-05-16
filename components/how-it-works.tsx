@@ -21,24 +21,22 @@ export default function HowItWorks() {
   const steps = [
     {
       number: 1,
-      title: "Connect Your CRM",
-      description: "Integrate with your existing CRM to import your lead lists and export results automatically.",
+      title: "Input Your Lead",
+      description: "Simply provide a company website URL (or upload your CSV list).",
       icon: <Database className="h-10 w-10 text-pureWhite" />,
       delay: 0,
     },
     {
       number: 2,
-      title: "AI Research",
-      description:
-        "Our AI scans social profiles, news, and company data to identify relevant insights about your prospects.",
+      title: "Obsidian AI Works Its Magic",
+      description: "Our AI diligently researches, analyzes, and synthesizes critical information.",
       icon: <Search className="h-10 w-10 text-pureWhite" />,
       delay: 200,
     },
     {
       number: 3,
-      title: "Generate Hooks",
-      description:
-        "Based on the research, LeadSpark AI crafts personalized outreach hooks that resonate with your prospects.",
+      title: "Get Actionable Outputs",
+      description: "Receive a concise lead summary and multiple personalized outreach hooks, ready to use.",
       icon: <Send className="h-10 w-10 text-pureWhite" />,
       delay: 400,
     },
@@ -51,7 +49,9 @@ export default function HowItWorks() {
           <div className="inline-block px-4 py-2 bg-primary-50 rounded-full mb-6 border border-primary-100">
             <span className="text-primary-700 font-medium text-sm">Our Process</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-darkGray mb-6">How Obsidian AI Works</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-darkGray mb-6">
+            Supercharge Your Outreach in 3 Simple Steps
+          </h2>
           <p className="text-xl text-mediumGray">
             Our AI-powered platform automates research and generates personalized outreach hooks in three simple steps.
           </p>

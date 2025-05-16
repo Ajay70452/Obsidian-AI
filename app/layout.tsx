@@ -20,7 +20,7 @@ export default function RootLayout({
         <title>Obsidian AI - Automate Lead Research & Outreach</title>
         <meta
           name="description"
-          content="Obsidian AI automates lead research and generates personalized outreach hooks for sales teams."
+          content="Obsidian AI automates deep lead research and generates compelling, personalized outreach content for sales teams."
         />
       </head>
       <body className={`${inter.variable} font-sans`}>
