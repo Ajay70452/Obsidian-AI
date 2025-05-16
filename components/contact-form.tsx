@@ -11,9 +11,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-// Import hooks from react-hook-form
-import { useForm, useWatch } from "react-hook-form";
 
+// Import hooks from react-hook-form
+import { useForm, useWatch, Controller } from "react-hook-form";
 // Define the form data structure - this is what react-hook-form will give us
 type FormData = {
   name: string;
