@@ -348,37 +348,61 @@ export default function ContactForm() {
                 </div>
               )}
 
-              <div>
-                <Label className="text-darkGray font-medium block mb-3">
-                  What's your primary purpose for using Obsidian AI? <span className="text-primary-500">*</span>
-                </Label>
-                <div className="space-y-3">
-                  {purposesOptions.map((purpose) => (
-                    <div key={purpose.id} className="flex items-start">
-                       {/* Use register and watch for the custom Checkbox components */}
-                      <Checkbox
-                        id={purpose.id}
-                        checked={watchPurposes?.includes(purpose.id)} // Use watch to get current value for rendering
-                        onCheckedChange={(checked) => {
-                          const currentPurposes = watchPurposes || [];
-                          const newPurposes = checked
-                            ? [...currentPurposes, purpose.id]
-                            : currentPurposes.filter((p) => p !== purpose.id);
-                          setValue("purposes", newPurposes, { shouldValidate: true, shouldDirty: true }); // Update form state and trigger validation
-                        }}
-                        className="mt-1 border-lightGray text-primary-500 focus:ring-primary-500/20"
-                      />
-                      <Label htmlFor={purpose.id} className="ml-3 text-mediumGray font-normal cursor-pointer">
-                        {purpose.label}
-                      </Label>
-                    </div>
-                  ))}
-                </div>
-                 {/* Manual validation message display as Checkboxes are managed via setValue */}
-                {errors.purposes && <p className="text-red-500 text-sm mt-1">{errors.purposes.message}</p>}
-                 {/* Hidden input to register the purposes field so its value is included in the data object */}
-                 <input type="hidden" {...register("purposes", { required: "Please select at least one purpose" })} />
-              </div>
+<div>
+  <Label className="text-darkGray font-medium block mb-3">
+    What's your primary purpose for using Obsidian AI?{" "}
+    <span className="text-primary-500">*</span>
+  </Label>
+
+  {/* --- Start of Controller for Purposes --- */}
+  <Controller
+    name="purposes" // Name of the field
+    control={control} // The control object from useForm
+    rules={{
+      // Validation rules for this field
+      validate: (value) =>
+        (value && value.length > 0) || "Please select at least one purpose", // Custom validation checks if array has items
+    }}
+    render={({ field, fieldState }) => (
+      // field object contains { onChange, onBlur, value, name, ref }
+      // fieldState contains { invalid, isTouched, isDirty, error }
+      <div className="space-y-3">
+        {purposesOptions.map((purpose) => (
+          <div key={purpose.id} className="flex items-start">
+            <Checkbox
+              id={purpose.id}
+              // Use field.value to determine if this checkbox is checked
+              checked={field.value?.includes(purpose.id)}
+              // Use field.onChange to update the array value in react-hook-form state
+              onCheckedChange={(checked) => {
+                const currentPurposes = field.value || []; // Get current value from field
+                const newPurposes = checked
+                  ? [...currentPurposes, purpose.id]
+                  : currentPurposes.filter((p) => p !== purpose.id);
+                field.onChange(newPurposes); // Pass the new array to onChange
+              }}
+              className="mt-1 border-lightGray text-primary-500 focus:ring-primary-500/20"
+            />
+            <Label
+              htmlFor={purpose.id}
+              className="ml-3 text-mediumGray font-normal cursor-pointer"
+            >
+              {purpose.label}
+            </Label>
+          </div>
+        ))}
+        {/* Display error message using fieldState.error */}
+        {fieldState.error && (
+          <p className="text-red-500 text-sm mt-1">
+            {fieldState.error.message}
+          </p>
+        )}
+      </div>
+    )}
+  />
+  {/* --- End of Controller for Purposes --- */}
+
+</div>
 
               <div>
                 <Label className="text-darkGray font-medium block mb-3">
